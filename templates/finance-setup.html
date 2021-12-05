@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- google font link -->
+
+    <link rel="stylesheet" href="../styles/css/style.css">
+    <link rel="shortcut icon" href="../img/favicon.svg" type="image/svg">
+
+    <title>QOREFI Project</title>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo__box margin-l-auto">
+                <img src="../img/logo.svg" alt="Logo" class="img-responsive d-block">
+            </div>
+        </div>
+    </header>
+
+    <div class="progress">
+        <div class="container">
+            <div class="col-12">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="progress--text active">
+                        Financial Setup
+                    </div>
+                    <div class="progress--text">
+                        Extract Document
+                    </div>
+                    <div class="progress--text">
+                        Map Parameters
+                    </div>
+                    <div class="progress--text">
+                        Credit Ratio
+                    </div>
+                </div>
+                <div class="progress__bar margin-t-16">
+                    <div class="progress__bar--container">
+                        <div class="progress__bar--status" style="width: 21%"></div>
+                    </div>
+                    <div class="progress__bar--indicator" style="left: 20%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main class="finance__details">
+
+        <div class="container">
+            <div class="finance__document--type">
+                <div class="row">
+                    <div class="col-2">
+                        <p class=" font-500 h5 text-captalize">Document Type*</p>
+                    </div>
+
+                    <div class="col-4">
+                        <span class="radio radio--full">
+                            <input type="radio" id="days" name="reason">
+                            <label for="day">
+                                <p class="">
+                                    <span class="radio__desc h4 font-600 text-uppercase">Financial
+                                        statement</span>
+                                </p>
+                            </label>
+                        </span>
+                    </div>
+
+                    <div class="col-4">
+                        <span class="radio radio--full">
+                            <input type="radio" id="days" name="reason">
+                            <label for="day">
+                                <p class="">
+                                    <span class="radio__desc h4 font-600 text-uppercase">ITR - Tax
+                                        returns</span>
+                                </p>
+                            </label>
+                        </span>
+                    </div>
+
+                    <div class="col-2">
+                        <span class="radio radio--full">
+                            <input type="radio" id="days" name="reason">
+                            <label for="day">
+                                <p class="">
+                                    <span class="radio__desc h4 font-600 text-uppercase">Others</span>
+                                </p>
+                            </label>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="finance__selection">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="custom-select-wrapper d-flex">
+                            <div class="h5 font-500 text-captalize margin-r-20 margin-t-10">Term period*</div>
+
+                            <div class="custom-select open">
+                                <div class="custom-select__trigger"><span>half yearly</span>
+                                    <div class="arrow">
+                                        <img src="../img/arror.svg" alt="arrow" class="img-responsive d-block">
+                                    </div>
+                                </div>
+                                <div class="custom-options">
+                                    <span class="custom-option">annualy</span>
+                                    <span class="custom-option">half yearly</span>
+                                    <span class="custom-option">Quaterly</span>
+                                    <span class="custom-option">Monthly</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-4">
+                        <div class="custom-select-wrapper d-flex">
+                            <div class="h5 font-500 text-captalize margin-r-20 margin-t-10">From</div>
+
+                            <div class="">
+                                <div class="custom-select">
+                                    <div class="custom-select__trigger"><span>HY1</span>
+                                        <div class="arrow">
+                                            <img src="../img/arror.svg" alt="arrow" class="img-responsive d-block">
+                                        </div>
+                                    </div>
+                                    <div class="custom-options">
+                                        <span class="custom-option">HY1</span>
+                                        <span class="custom-option">HY2</span>
+                                    </div>
+                                </div>
+
+                                <div class="custom-select margin-t-20">
+                                    <div class="custom-select__trigger"><span>2019</span>
+                                        <div class="arrow">
+                                            <img src="../img/arror.svg" alt="arrow" class="img-responsive d-block">
+                                        </div>
+                                    </div>
+                                    <div class="custom-options">
+                                        <span class="custom-option">2019</span>
+                                        <span class="custom-option">2020</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="custom-select-wrapper d-flex">
+                            <div class="h5 font-500 text-captalize margin-r-20 margin-t-10">To</div>
+
+                            <div class="">
+                                <div class="custom-select">
+                                    <div class="custom-select__trigger"><span>HY1</span>
+                                        <div class="arrow">
+                                            <img src="../img/arror.svg" alt="arrow" class="img-responsive d-block">
+                                        </div>
+                                    </div>
+                                    <div class="custom-options">
+                                        <span class="custom-option">HY1</span>
+                                        <span class="custom-option">HY2</span>
+                                    </div>
+                                </div>
+
+                                <div class="custom-select open margin-t-20">
+                                    <div class="custom-select__trigger"><span>2019</span>
+                                        <div class="arrow">
+                                            <img src="../img/arror.svg" alt="arrow" class="img-responsive d-block">
+                                        </div>
+                                    </div>
+                                    <div class="custom-options">
+                                        <span class="custom-option">2020</span>
+                                        <span class="custom-option">2019</span>
+                                        <span class="custom-option">2018</span>
+                                        <span class="custom-option">2017</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="drag--drop d-flex justify-content-center align-items-center">
+                        <div class="drag--drop-text text-center">
+                            <div class="drag--drop-logo">
+                                <img src="../img/upload.svg" alt="Upload Logo" class="img-responsive d-block">
+                            </div>
+                            <h3 class="font-600 text-uppercase h3">drag or drop file here</h3>
+                            <p class="text-captalize margin-t-20">(recommended format .pdf .xls, upto size 100MB)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="container">
+        <div class="next-back">
+            <div class="d-flex justify-content-center   ">
+                <button class="btn btn-md btn--secondary btn--blue"> Next</button>
+                <button class="btn btn-md btn--secondary btn--white">Back</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- google font link -->
+
+    <link rel="stylesheet" href="../styles/css/style.css">
+    <link rel="shortcut icon" href="../img/favicon.svg" type="image/svg">
+
+    <title>QOREFI Project</title>
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo__box margin-l-auto">
+                <img src="../img/logo.svg" alt="Logo" class="img-responsive d-block">
+            </div>
+        </div>
+    </header>
+
+    <div class="progress">
+        <div class="container">
+            <div class="col-12">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="progress--text active">
+                        Financial Setup
+                    </div>
+                    <div class="progress--text">
+                        Extract Document
+                    </div>
+                    <div class="progress--text">
+                        Map Parameters
+                    </div>
+                    <div class="progress--text">
+                        Credit Ratio
+                    </div>
+                </div>
+                <div class="progress__bar margin-t-16">
+                        <div class="progress__bar--container">
+                            <div class="progress__bar--status" style="width: 51%"></div>
+                        </div>
+                        <div class="progress__bar--indicator" style="left: 50%"></div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="next-back">
+            <div class="d-flex align-items-center">
+                <p class="color-black-secondary">*select extraction once all parameters are covered.</p>
+                <button class="btn btn-sm btn--secondary btn--white" data-target="confirm-modal">
+                    <img src="../img/extract.svg" alt="extract icon">
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <main class="finance__details">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <div class="h5 font-500 margin-b-10">2019-2020 Financial statement.pdf</div>
+                </div>
+                <div class="col-2">
+                    <h5 class="h5 font-500 margin-b-10">Add selection to</h5>
+                </div>
+            </div>
+           <div class="overflow-hidden" style="height: 51rem;">
+                <div class="row">
+                        <div class="col-5">
+                            <div class="margin-t-20 overflow-auto" style="height: 51rem;">
+                                <div class="drag--drop d-flex justify-content-center align-items-center">
+                                    <div class="drag--drop-text text-center">
+                                        <div class="drag--drop-logo">
+                                            <img src="../img/upload.svg" alt="Upload Logo" class="img-responsive d-block">
+                                        </div>
+                                        <h3 class="font-600 text-uppercase h3">drag or drop file here</h3>
+                                        <p class="text-captalize margin-t-20">(recommended format .pdf .xls, upto size 100MB)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="margin-t-20">
+                                <div class="margin-t-20">
+                                    <span class="radio radio--full">
+                                        <input type="radio" id="days" name="reason">
+                                        <label for="day">
+                                            <p class="">
+                                                <span class="radio__desc text-captalize color-success">balance sheets</span>
+                                            </p>
+                                        </label>
+                                    </span>
+                                </div>
+                                <div class="margin-t-20">
+                                    <span class="radio radio--full">
+                                        <input type="radio" id="days" name="reason">
+                                        <label for="day">
+                                            <p class="">
+                                                <span class="radio__desc text-captalize color-dark">Income statement</span>
+                                            </p>
+                                        </label>
+                                    </span>
+                                </div>
+                                <div class="margin-t-20">
+                                    <span class="radio radio--full">
+                                        <input type="radio" id="days" name="reason">
+                                        <label for="day">
+                                            <p class="">
+                                                <span class="radio__desc text-captalize color-dark">cash flow</span>
+                                            </p>
+                                        </label>
+                                    </span>
+                                </div>
+                            </div>
+        
+                            <div class="margin-t-60">
+                                <button class="btn btn-sm btn--secondary btn--white">clear data</button>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="extract__table bg-white-gray" style="height: 51rem; border-radius: 5px;">
+                                <table class="table bg-white-gray">
+                                    <thead>
+                                        <tr>
+                                            <th width="35%">Description</th>
+                                            <th width="10%"></th>
+                                            <th>FY 2018</th>
+                                            <th>FY 2019</th>
+                                            <th>FY 2020</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="font-500">
+                                            <td>Revenue</td>
+                                            <td><img src="../img/triangle-arrow.svg" alt="arrow" width="16"></td>
+                                            <td>₹15,53,984</td>
+                                            <td>₹15,53,984</td>
+                                            <td>₹15,53,984</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gross revenue</td>
+                                            <td></td>
+                                            <td>₹10,00,000</td>
+                                            <td>₹10,00,000</td>
+                                            <td>₹10,00,000</td>
+                                        </tr>
+                                        <tr class="font-500">
+                                            <td>cost of goods sold</td>
+                                            <td><img src="../img/triangle-arrow.svg" alt="arrow" width="16"></td>
+                                            <td>₹15,53,984</td>
+                                            <td>₹15,53,984</td>
+                                            <td>₹15,53,984</td>
+                                        </tr>
+                                        <tr>
+                                            <td>COGS - labour</td>
+                                            <td></td>
+                                            <td>₹10,00,000</td>
+                                            <td>₹10,00,000</td>
+                                            <td>₹10,00,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>COGS - Material</td>
+                                            <td></td>
+                                            <td>₹1,00,984</td>
+                                            <td>₹1,00,984</td>
+                                            <td>₹1,00,984</td>
+                                        </tr>
+                                        <tr>
+                                            <td>COGS - Overhead</td>
+                                            <td></td>
+                                            <td>₹1,00,984</td>
+                                            <td>₹1,00,984</td>
+                                            <td>₹1,00,984</td>
+                                        </tr>
+                                        <tr class="font-500">
+                                            <td>Expenses</td>
+                                            <td><img src="../img/triangle-arrow.svg" alt="arrow" width="16"></td>
+                                            <td>₹1,00,984</td>
+                                            <td>₹1,00,984</td>
+                                            <td>₹1,00,984</td>
+                                        </tr>
+                                        <tr class="font-500">
+                                            <td>Operating Expenses</td>
+                                            <td><img src="../img/triangle-arrow.svg" alt="arrow" width="16"></td>
+                                            <td>₹1,00,984</td>
+                                            <td>₹1,00,984</td>
+                                            <td>₹1,00,984</td>
+                                        </tr>
+                                        <tr>
+                                            <td>COGS - Overhead</td>
+                                            <td></td>
+                                            <td>₹1,00,984</td>
+                                            <td>₹1,00,984</td>
+                                            <td>₹1,00,984</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+           </div>
+        </div>
+    </main>
+
+    <div class="container">
+        <div class="next-back">
+            <div class="d-flex justify-content-center   ">
+                <button class="btn btn--secondary btn--blue"> Next</button>
+                <button class="btn btn--secondary btn--white">Back</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MODAL -->
+    <div class="modal" data-content="confirm-modal">
+        <div class="modal--container d-flex justify-content-between flex-column">
+            <div class="modal--content text-center">
+                <h3 class="h3 font-500 color-border-dark">Confirm selection</h3>
+                <p class="h5 color-border-dark margin-t-60 font-normal">The selected portion will be extracted and added to balance sheet.</p>
+            </div>
+
+            <div class="modal--footer">
+                <div class="next-back">
+                    <div class="d-flex justify-content-center">
+                        <button class="btn btn--secondary btn--blue" data-close="confirm-modal"> confirm</button>
+                        <button class="btn btn--secondary btn--white">Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    var $this = document.querySelectorAll('[data-target]');
+    var $thisClose = document.querySelectorAll('[data-close]');
+
+
+    for (var i = 0, length = $this.length; i < length; i++) {
+        $this[i].addEventListener('click', function () {
+            // Open Modal
+            document.body.classList.add('overlay-open');
+            var overlayTarget = this.getAttribute('data-target');
+            var overlayContent = document.querySelectorAll(`[data-content="${overlayTarget}"]`);
+            overlayContent = overlayContent[0];
+            overlayContent.classList.add('overlay--open');
+            // Close Modal
+            var overlayClose = document.querySelectorAll(`[data-close="${overlayTarget}"]`);
+            overlayClose = overlayClose[0];
+            overlayClose.addEventListener('click', function () {
+                overlayContent.classList.remove('overlay--open');
+            })
+
+        });
+    }
+</script>
+
+</html>

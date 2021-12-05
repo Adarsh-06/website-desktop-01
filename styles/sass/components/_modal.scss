@@ -1,0 +1,55 @@
+/* Modal Css */
+.overlay-open {
+    overflow: hidden;
+}
+
+.modal {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    display: none;
+    transition: all .3s linear;
+
+}
+
+.modal--container {
+    height: 500px;
+    padding: 9.4rem 8rem 8rem;
+    background-color: $color-white;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.45);
+    @include position(absolute, 50%, false, false, 50%);
+    transform: translate(-50%, -50%);
+}
+
+.modal--content {
+    padding-bottom: 1.5rem;
+}
+
+.modal-heading {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    color: $color-black;
+}
+
+
+.modal--footer {
+    text-align: center;
+}
+
+.modal--footer p {
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-black-a;
+
+}
+
+.overlay--open {
+    display: block;
+}

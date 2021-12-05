@@ -1,0 +1,13 @@
+{
+  "name": "qorefi",
+  "version": "1.0.0",
+  "description": "Landing page",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass styles/sass/main.scss styles/css/style.css -w",
+    "cssm": "node-sass styles/css/style.css styles/css/style.css --output-style compressed"
+  },
+  "author": "Adarsh",
+  "license": "ISC",
+  "devDependencies": {}
+}

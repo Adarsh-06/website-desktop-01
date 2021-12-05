@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<td lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- google font link -->
+
+        <link rel="stylesheet" href="../styles/css/style.css">
+        <link rel="shortcut icon" href="../img/favicon.svg" type="image/svg">
+
+        <title>QOREFI Project</title>
+
+    </head>
+
+    <body>
+
+        <header class="header">
+            <div class="container">
+                <div class="logo__box margin-l-auto">
+                    <img src="../img/logo.svg" alt="Logo" class="img-responsive d-block">
+                </div>
+            </div>
+        </header>
+
+        <div class="progress">
+            <div class="container">
+                <div class="col-12">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="progress--text active">
+                            Financial Setup
+                        </div>
+                        <div class="progress--text">
+                            Extract Document
+                        </div>
+                        <div class="progress--text">
+                            Map Parameters
+                        </div>
+                        <div class="progress--text">
+                            Credit Ratio
+                        </div>
+                    </div>
+                    <div class="progress__bar margin-t-16">
+                        <div class="progress__bar--container">
+                            <div class="progress__bar--status" style="width: 76%"></div>
+                        </div>
+                        <div class="progress__bar--indicator" style="left: 75%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="next-back">
+                <div class="row">
+                    <div class="col-4 align-self-center">
+                        <button class="btn  btn--secondary btn--white">preview download</button>
+                    </div>
+                    <div class="col-5">
+                        <h4 class="h4 font-500 margin-b-40 text-captalize">borowers balance sheet</h4>
+                        <div class="d-flex">
+                            <p class="margin-r-20">50 - Total</p>
+                            <p class="margin-r-20">45 - Total mapping done</p>
+                            <p>05 - unmapped </p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="filter height-auto finance__selection margin-b-10 margin-l-10 margin-top-reset">
+                            <div class="custom-select-wrapper d-flex">
+                                <div class="font-default font-500 text-captalize margin-r-20 margin-t-10">Filter by:
+                                </div>
+
+                                <div class="custom-select">
+                                    <div class="custom-select__trigger color-blue-c"><span>All</span>
+                                        <div class="arrow">
+                                            <img src="../img/arror.svg" alt="arrow" class="img-responsive d-block">
+                                        </div>
+                                    </div>
+                                    <div class="custom-options">
+                                        <span class="custom-option unmapped"> unmapped</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="search__box">
+                            <input type="search" placeholder="Search...">
+                            <div class="search--icon">
+                                <img src="../img/search.svg" alt="search icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <main class="finance__details margin-t-10 overflow-hidden" style="height: 65rem;">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-9">
+                        <div class="balance__sheet">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="bg-white-gray overflow-auto">
+                                        <div class="extract__table" style="width: 101rem">
+                                            <table class="table credit-table margin-b-10">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="bg-transparent" style="width: 38rem"></th>
+                                                        <th>Description</th>
+                                                        <th>FY 2018</th>
+                                                        <th>FY 2019</th>
+                                                        <th>FY 2020</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center">
+                                                                <span class="font-500 h5">assets</span>
+                                                                <div class="d-flex">
+                                                                    <img src="../img/yellow-star.svg" alt="star"
+                                                                        class="" width="20">
+                                                                    <img src="../img/triangle-arrow.svg" alt="arrow"
+                                                                        class="margin-l-10" width="16">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="row__asset--header shadow-table-cell">
+                                                            <div
+                                                                class="d-flex  justify-content-between align-items-center">
+                                                                <span class="font-500">current assets</span>
+                                                                <div class="d-flex">
+                                                                    <img src="../img/star.svg" alt="star" class=""
+                                                                        width="20">
+                                                                    <img src="../img/triangle-arrow.svg" alt="arrow"
+                                                                        class="margin-l-10" width="16">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="bg-highlight-red">
+                                                        <td rowspan="3"
+                                                            class="row__asset--subheader bg-white-gray padding-reset">
+                                                            <div class="shadow-table-cell bg-gradient-red">
+                                                                Cash
+                                                            </div>
+                                                        </td>
+                                                        <td>Cash</td>
+                                                        <td>₹10,00,000</td>
+                                                        <td>₹10,00,000</td>
+                                                        <td>₹10,00,000</td>
+                                                    </tr>
+                                                    <tr class="bg-highlight-red">
+                                                        <td>bank balance</td>
+                                                        <td>₹10,00,000</td>
+                                                        <td>₹10,00,000</td>
+                                                        <td>₹10,00,000</td>
+                                                    </tr>
+                                                    <tr class="bg-highlight-red">
+                                                        <td>A3A3A3</td>
+                                                        <td>₹10,00,000</td>
+                                                        <td>₹10,00,000</td>
+                                                        <td>₹10,00,000</td>
+                                                    </tr>
+                                                    <tr class="bg-highlight-green">
+                                                        <td rowspan="2"
+                                                            class="row__asset--subheader bg-white-gray padding-reset">
+                                                            <div class="shadow-table-cell bg-gradient-green">
+                                                                Marketable Securities
+                                                            </div>
+                                                        </td>
+                                                        <td>short term investments</td>
+                                                        <td>₹1,00,984</td>
+                                                        <td>₹1,00,984</td>
+                                                        <td>₹1,00,984</td>
+                                                    </tr>
+                                                    <tr class="bg-highlight-green">
+                                                        <td>Advance to suppliers</td>
+                                                        <td>₹1,00,984</td>
+                                                        <td>₹1,00,984</td>
+                                                        <td>₹1,00,984</td>
+                                                    </tr>
+                                                    <tr class="bg-highlight-red">
+                                                        <td rowspan="2"
+                                                            class="row__asset--subheader bg-white-gray padding-reset">
+                                                            <div class="shadow-table-cell bg-gradient-red">
+                                                                Others
+                                                            </div>
+                                                        </td>
+                                                        <td>Advance to suppliers</td>
+                                                        <td>₹1,00,984</td>
+                                                        <td>₹1,00,984</td>
+                                                        <td>₹1,00,984</td>
+                                                    </tr>
+                                                    <tr class="bg-highlight-red">
+                                                        <td>trade receivables</td>
+                                                        <td>₹1,00,000</td>
+                                                        <td>₹1,00,000</td>
+                                                        <td>₹1,00,000</td>
+                                                    </tr>
+                                                    <tr class="row-highlight">
+                                                        <td class="balance__sheet--total-count">
+                                                            <div class="">
+                                                                <h5 class="h5 text-captalize">Total Cash & cash
+                                                                    equivalent
+                                                                </h5>
+                                                            </div>
+                                                        </td>
+                                                        <td></td>
+                                                        <td>₹15,53,984</td>
+                                                        <td>₹15,53,984</td>
+                                                        <td>₹15,53,984</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="row__asset--header shadow-table-cell">
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center">
+                                                                <span class="font-500">non-current assets</span>
+                                                                <div class="d-flex">
+                                                                    <img src="../img/star.svg" alt="star" class=""
+                                                                        width="16">
+                                                                    <img src="../img/triangle-arrow.svg" alt="arrow"
+                                                                        class="margin-l-10" width="16">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="row__asset--header shadow-table-cell">
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center">
+                                                                <span class="font-500">fixed assets</span>
+                                                                <div class="d-flex">
+                                                                    <img src="../img/star.svg" alt="star" class=""
+                                                                        width="16">
+                                                                    <img src="../img/triangle-arrow.svg" alt="arrow"
+                                                                        class="margin-l-10" width="16">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="bg-highlight-red">
+                                                        <td rowspan="1"
+                                                            class="row__asset--subheader bg-white-gray padding-reset">
+                                                            <div class="shadow-table-cell bg-gradient-red">
+                                                                assets tied to natural resources
+                                                            </div>
+                                                        </td>
+                                                        <td>bank balance</td>
+                                                        <td>₹1,00,000</td>
+                                                        <td>₹1,00,000</td>
+                                                        <td>₹1,00,000</td>
+                                                    </tr>
+                                                    <tr class="bg-highlight-green">
+                                                        <td rowspan="1"
+                                                            class="row__asset--subheader bg-white-gray padding-reset">
+                                                            <div class="shadow-table-cell bg-gradient-green">
+                                                                automobiles
+                                                            </div>
+                                                        </td>
+                                                        <td>short term investments</td>
+                                                        <td>₹1,00,000</td>
+                                                        <td>₹1,00,000</td>
+                                                        <td>₹1,00,000</td>
+                                                    </tr>
+                                                    <tr class="bg-highlight-red">
+                                                        <td rowspan="1"
+                                                            class="row__asset--subheader bg-white-gray padding-reset">
+                                                            <div class="shadow-table-cell bg-gradient-red">
+                                                                Capital Leases
+                                                            </div>
+                                                        </td>
+                                                        <td>bank balance</td>
+                                                        <td>₹1,00,000</td>
+                                                        <td>₹1,00,000</td>
+                                                        <td>₹1,00,000</td>
+                                                    </tr>
+
+                                                    <!-- Assets End-->
+
+                                                    <!-- Liabilities -->
+                                                    <tr>
+                                                        <td>
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center">
+                                                                <span class="font-500 h5">liabilities</span>
+                                                                <div class="d-flex">
+                                                                    <img src="../img/yellow-star.svg" alt="star"
+                                                                        class="" width="20">
+                                                                    <img src="../img/triangle-arrow.svg" alt="arrow"
+                                                                        class="margin-l-10" width="16">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="row__asset--header shadow-table-cell">
+                                                            <div
+                                                                class="d-flex  justify-content-between align-items-center">
+                                                                <span class="font-500">current liabilities</span>
+                                                                <div class="d-flex">
+                                                                    <img src="../img/star.svg" alt="star" class=""
+                                                                        width="20">
+                                                                    <img src="../img/triangle-arrow.svg" alt="arrow"
+                                                                        class="margin-l-10" width="16">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr class="bg-highlight-red">
+                                                        <td rowspan="3"
+                                                            class="row__asset--subheader bg-white-gray padding-reset">
+                                                            <div class="shadow-table-cell bg-gradient-red">
+                                                                Cash
+                                                            </div>
+                                                        </td>
+                                                        <td>Cash</td>
+                                                        <td>₹10,00,000</td>
+                                                        <td>₹10,00,000</td>
+                                                        <td>₹10,00,000</td>
+                                                    </tr>
+
+                                                    <!-- Liabilities End -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="extract__table bg-white-gray">
+                            <table class="table credit-table bg-white-gray">
+                                <thead>
+                                    <tr>
+                                        <th class="border-radius-t-l">Unmapped Parameters</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="overflow-auto" style="height: 60rem;">
+                                    <tr>
+                                        <td>Defered Income Tax - Long Term</td>
+                                    </tr>
+                                    <tr>
+                                        <td>joint Venture And Investment</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dividents Payable</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="container">
+            <div class="next-back">
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-sm btn--secondary btn--white">
+                        <img src="../img/refresh.svg" alt="extract icon">
+                    </button>
+                    <button class="btn btn--secondary btn--blue"> Next</button>
+                    <button class="btn btn--secondary btn--white">Back</button>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</td>

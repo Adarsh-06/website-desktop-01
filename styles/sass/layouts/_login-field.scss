@@ -1,0 +1,70 @@
+// @import "../abstracts/mixins";
+
+.login {
+    &__field {
+        position: relative;
+
+        &--label {
+            position: relative;
+            display: block;
+            margin-top: 3rem;
+        }
+
+        &--input {
+            appearance: none;
+            -webkit-appearance: none;
+            width: 100%;
+            border: 1px solid $color-border;
+            border-radius: 4px;
+            padding: 1.6rem;
+            font-size: 1.7rem;
+            line-height: 1.9rem;
+            outline: none;
+
+            &:focus {
+                border-color: $color-blue;                
+            }
+
+            &.active{
+                border-color: $color-primary;      
+                
+               &+.login__field--placeholder{
+                    top: 0%;
+                    font-size: 1.4rem;
+                    line-height: 1.6rem;
+                    padding: .1rem .4rem;
+                }
+        }
+        }
+
+        &--placeholder {
+            @include position(absolute, 50%);
+            transform: translateY(-50%);
+            left: 16px;
+            background-color: $color-white;
+            color: $color-light;
+            transition: 0.2s linear;           
+        }
+
+    }
+
+    &__psw--hide {
+        @include position(absolute, false, 3px, 4px);
+        padding: 1.3rem;
+        cursor: pointer;
+        background-color: $color-white;
+        color: $color-light;
+    }
+
+    &__psw--forget{
+        color: $color-primary;
+        font-size: 1.7rem;
+        line-height: 1.9rem;
+        margin-top: 1.8rem;
+        cursor: pointer;
+    }
+        
+
+        
+  
+}

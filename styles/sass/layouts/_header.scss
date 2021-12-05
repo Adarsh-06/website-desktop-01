@@ -1,0 +1,17 @@
+.header{
+    height: 7.2rem;
+    background-color: $color-secondary-light;
+    padding-top: 1px;
+}
+
+
+.logo{
+    &__box{
+        width: 7rem;
+        cursor: pointer;
+    }
+
+    &__text{
+        width: 9.2rem;
+    }
+}

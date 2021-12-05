@@ -1,0 +1,57 @@
+.btn {
+
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    padding: 1.5rem 5.6rem;
+
+    &-primary {
+        padding: 1.8rem;
+        background-color: $color-primary;
+        color: $color-white;
+        text-align: center;
+        box-shadow: 2px 2px 4px rgba(0, 67, 212, 0.16);
+        border-radius: 4px;
+        margin: 2rem 0;
+
+    }
+
+    &-full {
+        width: 100%;
+    }
+
+    &--secondary{
+        font-size: 2.1rem;
+        line-height: 1.6rem;
+        font-weight: 500;
+        border-radius: .6rem;
+        margin: 0 3rem;
+        height: 4.6rem;
+        text-transform: capitalize;
+    }
+    &--blue{
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
+    }
+
+    &--white{
+        background-color: $color-white;
+        color: $color-primary;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    &-sm{
+        padding: 0 1.5rem;
+    }
+
+}
+
+
+.next-back{
+    padding: 1.2rem 0;
+}

@@ -1,0 +1,31 @@
+.finance {
+    &__details {
+        margin: 6.5rem 0 4rem;
+
+        .drag--drop {
+            border: 2px dashed $color-secondary;
+            border-radius: 10px;
+            min-height: 22vh;
+            padding: 2rem;
+            cursor: pointer;
+            overflow: hidden;
+    
+            &-logo{
+                width: 8rem;
+                margin: 0 auto;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    &__document--type{
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+        padding: 2rem 0;
+    }
+
+    
+
+}
+
+

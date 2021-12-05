@@ -1,0 +1,98 @@
+.finance__selection {
+    height: 22.3rem;
+    margin: 5rem 0;
+
+    .custom-select-wrapper {
+        position: relative;
+        user-select: none;
+        width: 100%;
+    }
+
+    .custom-select {
+        width: 18rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .custom-select__trigger {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 15px 12px 20px;
+        height: 43px;
+        background: $color-white;
+        cursor: pointer;
+        border-width: 1px;
+        border-style: solid;
+        border-color: $color-white-b;
+        border-radius: 5px;
+        text-transform: capitalize;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    .custom-options {
+        @include position(absolute, 38px, 0, false, 0, 9);
+        display: block;
+        padding-top: .7rem;
+        border: 1px solid $color-white-b;
+        border-top: 0;
+        background: $color-white;
+        transition: all 0.5s;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        border-radius: 0 0 5px 5px;
+        height: 10.7rem;
+        max-height: 10.7rem;
+        overflow-y: scroll;
+    }
+
+    .custom-select.open {
+        .custom-options {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+        }
+    }
+
+    .custom-option {
+        position: relative;
+        display: block;
+        padding: 0.7rem 2rem;
+        cursor: pointer;
+        transition: all 0.5s;
+        text-transform: capitalize;
+
+        &:hover {
+            cursor: pointer;
+            background-color: $color-secondary-light;
+        }
+
+        &.unmapped {
+            &::before {
+                content: '';
+                width: 1.5rem;
+                height: 1.5rem;
+                background-color: $color-yellow-a;
+                display: inline-block;
+                transform: translateY(2px);
+            }
+        }
+    }
+
+    .arrow {
+        position: relative;
+        width: 12px;
+        transform: rotate(180deg);
+        transition: 0.3s linear;
+    }
+
+    .open {
+        .arrow {
+            transform: rotate(0deg);
+        }
+    }
+}
