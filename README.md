@@ -5,3 +5,8 @@
 
 => To minify css use command "npm run cssm"
 
+=> Learning purpose -:
+
+https://sass-guidelin.es/
+
+https://itnext.io/structuring-your-sass-projects-c8d41fa55ed4
